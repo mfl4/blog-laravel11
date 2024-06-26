@@ -1,0 +1,14 @@
+body {
+    background-color: darkblue;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+     color: white;
+}
+
+.active {
+    text-decoration: double underline;
+    font-style: oblique;
+}
