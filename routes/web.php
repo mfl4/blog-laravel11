@@ -21,8 +21,7 @@ Route::prefix('/posts')->group(function () {
         ]);
     });
 
-    Route::get('/{slug}', function ($slug) {
-        $post = Post::find($slug);
+    Route::get('/{post:slug}', function (Post $post) {
         return view('post', [
             'title' => 'Blog - ' . $post['title'],
             'post' => $post,
